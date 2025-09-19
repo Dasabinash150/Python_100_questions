@@ -1,0 +1,313 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 📝 Student Dataset Analysis  \n",
+    "This notebook covers **20 questions with solutions** on the `students_semester.csv` dataset.  \n",
+    "It includes **data cleaning, groupby, aggregation, and advanced analysis** using Pandas."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "\n",
+    "# Load dataset\n",
+    "df = pd.read_csv(\"students_semester.csv\")\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q1: Standardize Gender"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['Gender'] = df['Gender'].str.strip().str.lower().replace({'m':'male','f':'female'}).str.title()\n",
+    "df['Gender'].head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q2: Handle Missing Values"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['AIML'] = df['AIML'].fillna(df['AIML'].mean())\n",
+    "df['OS'] = df['OS'].fillna(df['OS'].mean())\n",
+    "df['DataScience'] = df['DataScience'].fillna(df['DataScience'].mean())\n",
+    "df['City'] = df['City'].fillna(\"Unknown\")\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q3: Remove Duplicates"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df = df.drop_duplicates()\n", "df.shape"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q4: Create TotalMarks"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['TotalMarks'] = df[['AIML','OS','DataScience']].sum(axis=1)\n",
+    "df[['Name','TotalMarks']].head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q5: Create Result Column"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['Result'] = df.apply(lambda x: 'Pass' if (x['AIML']>=40 and x['OS']>=40 and x['DataScience']>=40) else 'Fail', axis=1)\n",
+    "df[['Name','Result']].head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q6: Average Marks by Section"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"Section\")[[\"AIML\",\"OS\",\"DataScience\"]].mean()"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q7: Top AIML Scorer per Section"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.loc[df.groupby(\"Section\")['AIML'].idxmax()][[\"Name\",\"Section\",\"AIML\"]]"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q8: Average Attendance per City"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"City\")[\"Attendance(%)\"].mean()"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q9: Top 5 Students by TotalMarks"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.nlargest(5,\"TotalMarks\")[[\"StudentID\",\"Name\",\"TotalMarks\"]]"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q10: Subject Stats by Gender"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"Gender\")[[\"AIML\",\"OS\",\"DataScience\"]].agg(['min','max','mean'])"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q11: Failure Rate per Section"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"Section\")[\"Result\"].apply(lambda x: (x==\"Fail\").mean()*100)"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q12: 100% Attendance Students"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df[df[\"Attendance(%)\"]==100][[\"StudentID\",\"Name\"]]"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q13: AIML >80 per City"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df[df[\"AIML\"]>80].groupby(\"City\").size()"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q14: Average TotalMarks per City (Sorted)"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"City\")[\"TotalMarks\"].mean().sort_values(ascending=False)"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q15: Students Above Avg in All Subjects"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "avg_aiml, avg_os, avg_ds = df[\"AIML\"].mean(), df[\"OS\"].mean(), df[\"DataScience\"].mean()\n",
+    "df[(df[\"AIML\"]>avg_aiml)&(df[\"OS\"]>avg_os)&(df[\"DataScience\"]>avg_ds)][[\"Name\",\"Section\"]]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q16: Add Grade & Count"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def grade_calc(marks):\n",
+    "    if marks>=240: return \"A\"\n",
+    "    elif marks>=180: return \"B\"\n",
+    "    elif marks>=120: return \"C\"\n",
+    "    else: return \"D\"\n",
+    "\n",
+    "df[\"Grade\"] = df[\"TotalMarks\"].apply(grade_calc)\n",
+    "df[\"Grade\"].value_counts()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q17: Compare Avg Performance by Section"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df.groupby(\"Section\")[["AIML","OS","DataScience"]].mean()"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q18: Correlation Attendance vs TotalMarks"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": ["df[\"Attendance(%)\"].corr(df[\"TotalMarks\"])"]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q19: Students Who Are Toppers in Any Subject"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "top_aiml = df.loc[df[\"AIML\"].idxmax()][\"Name\"]\n",
+    "top_os = df.loc[df[\"OS\"].idxmax()][\"Name\"]\n",
+    "top_ds = df.loc[df[\"DataScience\"].idxmax()][\"Name\"]\n",
+    "{top_aiml, top_os, top_ds}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": ["## Q20: City-wise Grade Distribution"]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.pivot_table(index=\"City\",columns=\"Grade\",values=\"StudentID\",aggfunc=\"count\",fill_value=0)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

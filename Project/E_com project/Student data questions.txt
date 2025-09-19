@@ -1,0 +1,60 @@
+Part A – Data Cleaning (Basic Handling)
+
+Standardize the Gender column → convert all values to "Male" or "Female".
+
+Handle missing values:
+
+Fill missing subject marks with the mean of that subject.
+
+Replace missing City with "Unknown".
+
+Check for duplicate records (if any) and remove them.
+
+Create a new column TotalMarks = AIML + OS + DataScience.
+
+Create a new column Result where "Pass" if student scored ≥ 40 in each subject, else "Fail".
+
+Part B – GroupBy & Aggregation (Core Concepts)
+
+Find the average marks in each subject for Section A and Section B.
+
+Find the highest scorer in AIML for each Section.
+
+Calculate the average attendance percentage by City.
+
+Find the top 5 students with the highest TotalMarks.
+
+Calculate minimum, maximum, and average marks in each subject by Gender.
+
+Part C – Intermediate Analysis
+
+Find the failure rate (percentage of failed students) in each Section.
+
+Identify the student(s) with 100% attendance.
+
+For each City, find the number of students who scored above 80 in AIML.
+
+Calculate the average TotalMarks per City and sort cities in descending order.
+
+Identify students who scored above average in all three subjects.
+
+Part D – Advanced Concepts
+
+Add a new column Grade based on TotalMarks:
+
+≥ 240 → "A",
+
+180–239 → "B",
+
+120–179 → "C",
+
+< 120 → "D".
+👉 Count how many students fall in each grade.
+
+Compare average performance of Section A vs Section B in each subject.
+
+Find the correlation between Attendance(%) and TotalMarks.
+
+Identify students who are topper in at least one subject (AIML, OS, or DataScience).
+
+Find the city-wise distribution of grades (pivot-style: City vs Grade counts).

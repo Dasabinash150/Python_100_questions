@@ -1,0 +1,42 @@
+Part A – Data Cleaning
+
+Some values in PaymentMode are inconsistent ("Cash", "CASH", "card", "Credit Card", "upi", "UPI").
+
+Clean this column to standardize categories into "Cash", "Card", "UPI", "Online".
+
+There are missing values in CustomerName, City, and Discount.
+Show how you would:
+
+Fill missing Discount with 0.
+
+Replace missing City with "Unknown".
+
+Drop rows where CustomerName is missing.
+
+Part B – GroupBy & Aggregation
+
+Find the total sales value (Quantity × Price after discount) for each City.
+
+For each Category, calculate:
+
+Total Quantity Sold
+
+Average Price of Products
+
+Maximum Discount Applied
+
+Identify the top 3 customers (by name) who spent the most overall.
+
+Find the most popular product (highest Quantity sold) in each City.
+
+Part C – Advanced Analysis
+
+Add a new column Revenue = Quantity × Price × (1 - Discount/100).
+Now, calculate monthly total revenue and plot the trend.
+
+Compare average revenue per order between Cash, UPI, and Card.
+Which payment mode is most profitable?
+
+Find category-wise revenue share per city (i.e., percentage of total revenue by category within each city).
+
+Identify customers who bought from at least 3 different categories.

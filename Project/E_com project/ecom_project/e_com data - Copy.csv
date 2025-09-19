@@ -1,0 +1,201 @@
+OrderID,CustomerName,Category,Product,Quantity,Price,Discount,OrderDate,City,PaymentMode
+1001,Anjali Yadav,Groceries,Rice Bag,1,2175,15,01-01-2024,Delhi,card
+1002,Neha Singh,Electronics,Chair,1,813,20,02-01-2024,Bangalore,card
+1003,Rajesh Sahu,Electronics,Textbook,5,1162,20,03-01-2024,Kolkata,Credit Card
+1004,Vikash Gupta,Furniture,Rice Bag,3,2076,5,04-01-2024,Chennai,CASH
+1005,Anjali Yadav,Groceries,Laptop,1,1396,0,05-01-2024,,upi
+1006,Deepak Das,Books,Jeans,3,225,15,06-01-2024,Mumbai,upi
+1007,Rohan Verma,Groceries,Rice Bag,4,4732,5,07-01-2024,Kolkata,UPI
+1008,,Furniture,Headphones,2,3696,0,08-01-2024,Kolkata,card
+1009,Rajesh Sahu,Furniture,Headphones,4,3383,10,09-01-2024,Bangalore,Online
+1010,Vikash Gupta,Groceries,Rice Bag,4,1703,20,10-01-2024,Bangalore,UPI
+1011,Neha Singh,Furniture,Sofa,5,166,0,11-01-2024,Chennai,upi
+1012,Rajesh Sahu,Groceries,Jeans,2,332,10,12-01-2024,Delhi,CASH
+1013,Rajesh Sahu,Clothing,Laptop,4,2256,0,13-01-2024,Bangalore,upi
+1014,Rohan Verma,Groceries,Rice Bag,4,1269,20,14-01-2024,Bangalore,CASH
+1015,Sonal Mehta,Groceries,Sofa,2,2258,20,15-01-2024,Hyderabad,UPI
+1016,Vikash Gupta,Furniture,Headphones,2,4306,5,16-01-2024,,card
+1017,Priya Sharma,Furniture,Headphones,4,1593,15,17-01-2024,Hyderabad,upi
+1018,Rajesh Sahu,Electronics,Chair,2,4818,,18-01-2024,Hyderabad,Credit Card
+1019,Sonal Mehta,Electronics,Rice Bag,4,4107,0,19-01-2024,Kolkata,CASH
+1020,Priya Sharma,Clothing,Jeans,4,2572,10,20-01-2024,Delhi,card
+1021,Vikash Gupta,Electronics,Mobile,5,2760,20,21-01-2024,Mumbai,Online
+1022,Amit Kumar,Groceries,Jeans,1,2839,,22-01-2024,Chennai,CASH
+1023,Deepak Das,Furniture,Headphones,4,1861,20,23-01-2024,,UPI
+1024,,Electronics,Headphones,3,3614,0,24-01-2024,Bangalore,Online
+1025,Meena Kumari,Electronics,Shirt,1,2075,5,25-01-2024,Bangalore,Online
+1026,Amit Kumar,Clothing,Headphones,1,2462,15,26-01-2024,Chennai,Cash
+1027,Deepak Das,Clothing,Laptop,1,976,0,27-01-2024,Bangalore,upi
+1028,Rohan Verma,Groceries,Novel,5,3912,20,28-01-2024,Delhi,CASH
+1029,Anjali Yadav,Furniture,Rice Bag,4,3548,5,29-01-2024,Hyderabad,Online
+1030,Neha Singh,Clothing,Jeans,5,1412,0,30-01-2024,Bangalore,Cash
+1031,Meena Kumari,Electronics,Novel,4,1560,10,31-01-2024,Kolkata,UPI
+1032,Rohan Verma,Furniture,Sofa,5,2809,15,01-02-2024,Bangalore,card
+1033,Vikash Gupta,Furniture,Mobile,5,2424,0,02-02-2024,Mumbai,Credit Card
+1034,Rohan Verma,Electronics,Laptop,3,1833,5,03-02-2024,Delhi,Credit Card
+1035,Anjali Yadav,Clothing,Mixer Grinder,5,1705,10,04-02-2024,Mumbai,CASH
+1036,Vikash Gupta,Electronics,Jeans,2,2663,5,05-02-2024,Mumbai,Online
+1037,Meena Kumari,Furniture,Novel,3,3521,5,06-02-2024,Kolkata,Credit Card
+1038,Anjali Yadav,Books,Mobile,5,3617,10,07-02-2024,Delhi,upi
+1039,Priya Sharma,Books,Shirt,1,2497,5,08-02-2024,,Credit Card
+1040,Neha Singh,Groceries,Laptop,2,3835,,09-02-2024,,Credit Card
+1041,Meena Kumari,Electronics,Laptop,2,2970,0,10-02-2024,Delhi,Credit Card
+1042,Priya Sharma,Electronics,Shirt,2,1260,10,11-02-2024,Delhi,Cash
+1043,Deepak Das,Groceries,Mixer Grinder,3,4954,10,12-02-2024,Kolkata,Online
+1044,Meena Kumari,Groceries,Rice Bag,5,342,15,13-02-2024,Bangalore,upi
+1045,Deepak Das,Groceries,Shirt,5,2690,10,14-02-2024,Mumbai,Online
+1046,Vikash Gupta,Furniture,Laptop,1,1163,10,15-02-2024,Delhi,CASH
+1047,Priya Sharma,Electronics,Laptop,1,4424,0,16-02-2024,Bangalore,CASH
+1048,Neha Singh,Furniture,Novel,2,2695,15,17-02-2024,Bangalore,CASH
+1049,Anjali Yadav,Groceries,Headphones,1,1019,20,18-02-2024,Mumbai,UPI
+1050,Rajesh Sahu,Electronics,Mixer Grinder,3,105,0,19-02-2024,Kolkata,Credit Card
+1051,Rohan Verma,Furniture,Mobile,5,567,0,20-02-2024,Chennai,UPI
+1052,Amit Kumar,Furniture,Shirt,2,4270,20,21-02-2024,,Cash
+1053,Neha Singh,Groceries,Mobile,1,103,10,22-02-2024,Bangalore,CASH
+1054,Priya Sharma,Electronics,Shirt,3,745,5,23-02-2024,Hyderabad,upi
+1055,Rajesh Sahu,Groceries,Sofa,3,217,15,24-02-2024,Hyderabad,Online
+1056,Neha Singh,Electronics,Laptop,1,3028,5,25-02-2024,Mumbai,Credit Card
+1057,Priya Sharma,Books,Headphones,5,2651,20,26-02-2024,Chennai,card
+1058,Sonal Mehta,Clothing,Novel,1,4389,0,27-02-2024,Bangalore,upi
+1059,Sonal Mehta,Clothing,Headphones,2,946,0,28-02-2024,Kolkata,Credit Card
+1060,Deepak Das,Clothing,Headphones,1,2862,,29-02-2024,Chennai,UPI
+1061,Neha Singh,Groceries,Headphones,3,1241,0,01-03-2024,Bangalore,UPI
+1062,Sonal Mehta,Books,Mobile,1,1910,0,02-03-2024,Bangalore,upi
+1063,Priya Sharma,Electronics,Shirt,5,823,15,03-03-2024,Delhi,UPI
+1064,Deepak Das,Furniture,Textbook,4,324,15,04-03-2024,Kolkata,CASH
+1065,Priya Sharma,Electronics,Sofa,1,4727,20,05-03-2024,Delhi,Cash
+1066,Deepak Das,Furniture,Jeans,5,4308,0,06-03-2024,Mumbai,Online
+1067,Neha Singh,Electronics,Headphones,5,4754,0,07-03-2024,Delhi,Cash
+1068,Rajesh Sahu,Books,Rice Bag,3,2148,20,08-03-2024,Delhi,Credit Card
+1069,Anjali Yadav,Furniture,Mobile,5,4849,10,09-03-2024,Chennai,Online
+1070,Meena Kumari,Groceries,Mixer Grinder,5,4515,10,10-03-2024,Hyderabad,Online
+1071,Rajesh Sahu,Electronics,Novel,5,1673,,11-03-2024,,Cash
+1072,Vikash Gupta,Electronics,Jeans,5,1928,20,12-03-2024,Kolkata,upi
+1073,Priya Sharma,Furniture,Textbook,2,2017,0,13-03-2024,Delhi,Online
+1074,Vikash Gupta,Groceries,Rice Bag,2,4334,20,14-03-2024,Kolkata,Cash
+1075,Rajesh Sahu,Groceries,Textbook,3,2126,20,15-03-2024,Hyderabad,Online
+1076,Deepak Das,Books,Jeans,1,3844,10,16-03-2024,Hyderabad,card
+1077,Meena Kumari,Groceries,Headphones,5,1001,5,17-03-2024,Delhi,upi
+1078,Meena Kumari,Groceries,Rice Bag,1,4885,0,18-03-2024,Mumbai,CASH
+1079,Amit Kumar,Groceries,Textbook,1,2139,10,19-03-2024,Delhi,Online
+1080,Meena Kumari,Clothing,Novel,3,109,5,20-03-2024,Chennai,card
+1081,Anjali Yadav,Books,Shirt,5,360,5,21-03-2024,Bangalore,CASH
+1082,Meena Kumari,Electronics,Laptop,5,1773,15,22-03-2024,Mumbai,CASH
+1083,Rajesh Sahu,Furniture,Shirt,4,2319,0,23-03-2024,Delhi,Credit Card
+1084,Amit Kumar,Electronics,Jeans,1,2160,5,24-03-2024,Kolkata,Online
+1085,Rajesh Sahu,Books,Mobile,1,3813,10,25-03-2024,Mumbai,Cash
+1086,Rajesh Sahu,Furniture,Laptop,2,1719,15,26-03-2024,Mumbai,Online
+1087,Rohan Verma,Books,Sofa,4,420,0,27-03-2024,Delhi,card
+1088,Amit Kumar,Groceries,Novel,2,1442,20,28-03-2024,Mumbai,CASH
+1089,Rajesh Sahu,Furniture,Sofa,2,2476,10,29-03-2024,Kolkata,Online
+1090,Rohan Verma,Groceries,Rice Bag,2,2932,5,30-03-2024,Hyderabad,Cash
+1091,Rohan Verma,Electronics,Laptop,3,2924,5,31-03-2024,Mumbai,Credit Card
+1092,Amit Kumar,Electronics,Sofa,3,2094,10,01-04-2024,Hyderabad,Online
+1093,Vikash Gupta,Furniture,Sofa,2,3058,5,02-04-2024,Kolkata,upi
+1094,Deepak Das,Furniture,Textbook,4,2138,15,03-04-2024,Delhi,Credit Card
+1095,,Books,Shirt,1,3590,0,04-04-2024,Bangalore,Cash
+1096,Deepak Das,Books,Textbook,4,3777,15,05-04-2024,Mumbai,card
+1097,Meena Kumari,Groceries,Laptop,5,1218,5,06-04-2024,Bangalore,CASH
+1098,Anjali Yadav,Furniture,Laptop,3,1704,,07-04-2024,Kolkata,Online
+1099,Meena Kumari,Electronics,Jeans,1,4127,0,08-04-2024,Mumbai,Cash
+1100,Rajesh Sahu,Books,Textbook,1,335,0,09-04-2024,Hyderabad,Credit Card
+1101,Priya Sharma,Books,Chair,5,2069,10,10-04-2024,Chennai,upi
+1102,Amit Kumar,Electronics,Mixer Grinder,5,4529,10,11-04-2024,Bangalore,Cash
+1103,Anjali Yadav,Books,Shirt,2,2008,20,12-04-2024,Mumbai,UPI
+1104,Anjali Yadav,Groceries,Laptop,3,475,0,13-04-2024,Bangalore,upi
+1105,Rajesh Sahu,Furniture,Jeans,3,3630,20,14-04-2024,Mumbai,Credit Card
+1106,Vikash Gupta,Electronics,Textbook,4,2735,10,15-04-2024,Delhi,card
+1107,Rohan Verma,Furniture,Shirt,2,1670,10,16-04-2024,Hyderabad,CASH
+1108,Rajesh Sahu,Books,Textbook,2,2660,0,17-04-2024,Bangalore,Credit Card
+1109,Sonal Mehta,Books,Sofa,2,3491,,18-04-2024,Chennai,card
+1110,Rohan Verma,Electronics,Jeans,2,3065,,19-04-2024,Chennai,Online
+1111,Amit Kumar,Groceries,Shirt,3,3743,10,20-04-2024,,Cash
+1112,Rohan Verma,Clothing,Headphones,3,3950,10,21-04-2024,Mumbai,UPI
+1113,Vikash Gupta,Electronics,Rice Bag,2,972,15,22-04-2024,Bangalore,upi
+1114,Rohan Verma,Clothing,Rice Bag,4,1352,15,23-04-2024,Kolkata,upi
+1115,Amit Kumar,Clothing,Shirt,1,1414,20,24-04-2024,Bangalore,Cash
+1116,Vikash Gupta,Groceries,Textbook,1,4920,20,25-04-2024,Mumbai,UPI
+1117,Deepak Das,Clothing,Jeans,4,2998,5,26-04-2024,Chennai,Cash
+1118,Anjali Yadav,Clothing,Mixer Grinder,2,177,5,27-04-2024,Delhi,Online
+1119,Anjali Yadav,Groceries,Rice Bag,3,2721,0,28-04-2024,Chennai,card
+1120,Meena Kumari,Clothing,Jeans,1,4327,20,29-04-2024,Kolkata,Credit Card
+1121,Deepak Das,Clothing,Rice Bag,5,700,10,30-04-2024,Hyderabad,upi
+1122,Deepak Das,Clothing,Sofa,5,1165,20,01-05-2024,Delhi,Online
+1123,Rohan Verma,Electronics,Textbook,4,2236,10,02-05-2024,Kolkata,card
+1124,Anjali Yadav,Electronics,Sofa,2,2549,15,03-05-2024,Mumbai,Online
+1125,Amit Kumar,Electronics,Rice Bag,1,2443,20,04-05-2024,Delhi,UPI
+1126,Neha Singh,Groceries,Headphones,2,1963,15,05-05-2024,Kolkata,upi
+1127,,Books,Headphones,1,1418,5,06-05-2024,Mumbai,Credit Card
+1128,Vikash Gupta,Clothing,Sofa,4,4811,5,07-05-2024,Chennai,Cash
+1129,Anjali Yadav,Clothing,Headphones,4,3697,0,08-05-2024,Hyderabad,Cash
+1130,Anjali Yadav,Groceries,Rice Bag,5,3862,20,09-05-2024,Mumbai,card
+1131,Neha Singh,Clothing,Shirt,2,4770,15,10-05-2024,Bangalore,Credit Card
+1132,Anjali Yadav,Electronics,Sofa,5,2290,10,11-05-2024,Mumbai,CASH
+1133,Rohan Verma,Books,Mixer Grinder,2,1092,5,12-05-2024,Mumbai,UPI
+1134,Sonal Mehta,Furniture,Mixer Grinder,5,2812,5,13-05-2024,Hyderabad,card
+1135,Priya Sharma,Clothing,Mobile,3,2292,10,14-05-2024,Bangalore,CASH
+1136,Deepak Das,Electronics,Textbook,3,1348,15,15-05-2024,Kolkata,Online
+1137,Meena Kumari,Furniture,Headphones,3,3154,15,16-05-2024,Kolkata,UPI
+1138,Vikash Gupta,Books,Headphones,3,4698,20,17-05-2024,Mumbai,Online
+1139,Sonal Mehta,Furniture,Laptop,1,4133,20,18-05-2024,Bangalore,Credit Card
+1140,Neha Singh,Electronics,Chair,3,2097,0,19-05-2024,Bangalore,upi
+1141,Deepak Das,Furniture,Sofa,4,3787,5,20-05-2024,Hyderabad,UPI
+1142,Anjali Yadav,Groceries,Novel,4,2251,20,21-05-2024,Chennai,CASH
+1143,Meena Kumari,Furniture,Headphones,1,4118,15,22-05-2024,Kolkata,upi
+1144,Anjali Yadav,Clothing,Textbook,3,3210,10,23-05-2024,,Cash
+1145,Amit Kumar,Clothing,Mobile,3,2070,15,24-05-2024,Delhi,CASH
+1146,Amit Kumar,Groceries,Mixer Grinder,3,297,5,25-05-2024,Kolkata,card
+1147,Meena Kumari,Electronics,Headphones,5,2726,15,26-05-2024,Hyderabad,Cash
+1148,Meena Kumari,Clothing,Mobile,2,1302,0,27-05-2024,Kolkata,Cash
+1149,Neha Singh,Books,Rice Bag,5,2135,5,28-05-2024,Chennai,card
+1150,Meena Kumari,Clothing,Rice Bag,2,577,10,29-05-2024,Delhi,UPI
+1151,Rohan Verma,Clothing,Chair,3,1354,0,30-05-2024,Chennai,Cash
+1152,Anjali Yadav,Electronics,Shirt,3,1022,,31-05-2024,Delhi,Credit Card
+1153,Sonal Mehta,Furniture,Novel,5,519,10,01-06-2024,Mumbai,CASH
+1154,Rajesh Sahu,Clothing,Laptop,5,2304,0,02-06-2024,Hyderabad,upi
+1155,Meena Kumari,Groceries,Chair,2,2697,0,03-06-2024,Delhi,Cash
+1156,Vikash Gupta,Furniture,Jeans,4,1220,5,04-06-2024,Chennai,CASH
+1157,Amit Kumar,Books,Laptop,2,3168,20,05-06-2024,Kolkata,Online
+1158,,Electronics,Sofa,5,1050,0,06-06-2024,Delhi,CASH
+1159,Deepak Das,Books,Textbook,5,2436,0,07-06-2024,Hyderabad,upi
+1160,Rajesh Sahu,Furniture,Jeans,1,2343,10,08-06-2024,Delhi,CASH
+1161,Sonal Mehta,Furniture,Jeans,5,2745,15,09-06-2024,Bangalore,card
+1162,Rajesh Sahu,Furniture,Chair,1,1957,5,10-06-2024,Kolkata,upi
+1163,Meena Kumari,Books,Shirt,4,4712,5,11-06-2024,Hyderabad,UPI
+1164,,Furniture,Chair,2,1965,20,12-06-2024,Hyderabad,Online
+1165,Amit Kumar,Books,Sofa,2,3012,20,13-06-2024,Mumbai,card
+1166,Amit Kumar,Furniture,Mixer Grinder,1,2953,5,14-06-2024,Chennai,UPI
+1167,,Groceries,Headphones,2,3328,20,15-06-2024,Mumbai,CASH
+1168,Neha Singh,Furniture,Headphones,5,3819,10,16-06-2024,,upi
+1169,Anjali Yadav,Books,Shirt,3,3328,5,17-06-2024,Kolkata,Online
+1170,Priya Sharma,Clothing,Sofa,1,2471,20,18-06-2024,Delhi,card
+1171,Rohan Verma,Furniture,Shirt,2,2991,5,19-06-2024,Delhi,UPI
+1172,Amit Kumar,Clothing,Mobile,1,3856,,20-06-2024,Kolkata,UPI
+1173,Vikash Gupta,Groceries,Headphones,1,4325,0,21-06-2024,Hyderabad,Online
+1174,Amit Kumar,Electronics,Jeans,3,194,5,22-06-2024,Delhi,Credit Card
+1175,,Groceries,Novel,5,2774,0,23-06-2024,Delhi,CASH
+1176,Amit Kumar,Furniture,Textbook,1,2055,20,24-06-2024,Delhi,Online
+1177,Amit Kumar,Clothing,Sofa,2,893,0,25-06-2024,Chennai,UPI
+1178,Priya Sharma,Clothing,Laptop,4,1934,5,26-06-2024,Chennai,Cash
+1179,Priya Sharma,Books,Shirt,1,2216,15,27-06-2024,Bangalore,card
+1180,Sonal Mehta,Clothing,Textbook,1,4206,20,28-06-2024,Mumbai,Online
+1181,Anjali Yadav,Books,Laptop,3,3425,5,29-06-2024,Kolkata,Credit Card
+1182,Vikash Gupta,Electronics,Textbook,5,3019,20,30-06-2024,Kolkata,UPI
+1183,,Furniture,Novel,4,2697,10,01-07-2024,Kolkata,CASH
+1184,Amit Kumar,Books,Laptop,2,3305,0,02-07-2024,Bangalore,UPI
+1185,Rohan Verma,Electronics,Chair,4,4907,10,03-07-2024,Chennai,CASH
+1186,Priya Sharma,Clothing,Rice Bag,2,914,5,04-07-2024,Hyderabad,Online
+1187,Vikash Gupta,Clothing,Chair,5,445,15,05-07-2024,Hyderabad,CASH
+1188,Deepak Das,Electronics,Headphones,2,2449,20,06-07-2024,Bangalore,upi
+1189,Sonal Mehta,Clothing,Rice Bag,3,462,0,07-07-2024,Hyderabad,upi
+1190,Anjali Yadav,Electronics,Chair,3,2543,20,08-07-2024,Kolkata,upi
+1191,Neha Singh,Books,Rice Bag,3,2365,5,09-07-2024,Mumbai,Credit Card
+1192,Anjali Yadav,Books,Mixer Grinder,3,2288,20,10-07-2024,Delhi,Credit Card
+1193,Rajesh Sahu,Electronics,Rice Bag,4,3105,0,11-07-2024,Chennai,Cash
+1194,Amit Kumar,Books,Jeans,5,3381,5,12-07-2024,Chennai,Credit Card
+1195,Sonal Mehta,Books,Shirt,2,1084,20,13-07-2024,Bangalore,Online
+1196,Rajesh Sahu,Books,Shirt,2,1739,15,14-07-2024,Chennai,UPI
+1197,,Groceries,Jeans,3,927,5,15-07-2024,Kolkata,UPI
+1198,Neha Singh,Furniture,Textbook,3,2830,5,16-07-2024,Hyderabad,Cash
+1199,Priya Sharma,Clothing,Mobile,1,3631,15,17-07-2024,Kolkata,Credit Card
+1200,Sonal Mehta,Groceries,Textbook,5,4551,10,18-07-2024,Bangalore,CASH
